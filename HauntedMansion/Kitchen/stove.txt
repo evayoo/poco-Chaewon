@@ -1,4 +1,4 @@
 Now place the batter of lemon cake into the stove. 
 The lemon cake looks delicious. 
 
-This time, when you go back to kitchen use ls -a to hold the cake.
+Type ls -a to hold the cake.
