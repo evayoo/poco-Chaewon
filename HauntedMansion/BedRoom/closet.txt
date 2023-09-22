@@ -1,0 +1,5 @@
+You open the closet. You find 15 different colors of hanbok there. 
+
+Bern the bear says, "Open the green drawer, darling" 
+
+Now type ls -a to open the green drawer. 
