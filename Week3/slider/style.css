@@ -1,0 +1,85 @@
+html {
+    box-sizing: border-box;
+}
+
+//it's adding padding to the height >> that's why we need box sizing
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+}
+
+ol, ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    height: 80vh;
+    overflow-x:hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+ol {
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+li {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    padding: 0.25rem;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+ul li {
+    background-color: rgb(68,71, 114);
+    flex: 1 0 100%;
+    font-size: 10rem;
+    /*transition: transform 0.5s ease-in-out;
+    transform: translateX(-100%);*/
+    scroll-snap-align: start;
+    transform: translateX(-90%);
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+ul li:target {
+    transform: translateX(0%);
+    z-index: 3;
+}
+
+ul li:target ~ li {
+    transform: translateX(90%);
+}
+
+ul li:nth-child(even) {
+    background-color: rgb(26, 117, 23);
+}
+
+a {
+    color: red;
+    transition: color 0.5s linear 1s;
+}
+
+a:hover {
+    color: pink;
+}
+
+@supports(scroll-behavior: smooth){
+    ul {
+
+    }
+    transform: none;
+    scroll-snap-align: start;
+}

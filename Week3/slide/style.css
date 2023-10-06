@@ -1,0 +1,45 @@
+.Ex3 {
+    margin: 0px;
+    text-align: center;
+}
+
+.Ex3 ul {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    margin: 0px;
+    padding: 0px;
+}
+
+.Ex3 li {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    background: rgb(223, 252, 39);
+    transition: transform 0.5s ease 0s;
+}
+
+.Ex3 a {
+    left: 45vw;
+    margin: auto;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.Ex3 section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.Ex3 li:nth-of-type(2n+1) {
+    background: rgb(46, 237, 209);
+}
