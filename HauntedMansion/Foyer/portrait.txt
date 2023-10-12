@@ -1,11 +1,6 @@
 A mysterious portrait of a Bern the Bear. Their eyes seem to follow your every move.
 You need to please her to get a scholarship to get into PowerCoders. 
-The air in the foyer is heavy with anticipation. You sense that there's more to this room than meets the eye.
-You examine the Portrait. 
-
 As you examine the Portrait, you notice something peculiar. 
-The eyes of the Bern the bear in the painting seem to be fixated on a particular spot on the wall, depicting
-just to the right of the frame. You tap on the wall, and it sounds hollow, 
-as if there's something behind it.
+The eyes of the Bern the bear in the painting seem to be fixated on a particular spot on the wall, depicting just to the right of the frame. You tap on the wall, and it sounds hollow, as if there's something behind it.
 You move the painting aside and a door appears in front of you, but it's securely locked. 
 Use the key to unlock the door and get into the kitchen. 

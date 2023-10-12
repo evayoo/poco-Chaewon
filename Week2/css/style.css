@@ -1,0 +1,60 @@
+html, body {
+    box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 10px 0;
+}
+
+h1::before {
+    background: #000000;
+    content: "";
+    display: block;
+    height: 10px;
+    width: 50px;
+}
+
+[href$=".pdf"]::after{
+    content: " (.pdf)";
+}
+
+[target="_blank"]::after{
+    content: "(open in new window)";
+}
+
+fieldset {
+    align-items: baseline;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 200px 1fr;
+}
+
+label {
+    margin-top: 1rem 0 0.25rem;
+}
+
+/*
+fieldset + fieldset {
+    display: block;
+}
+*/
+
+
+#cc {
+    order: -1;
+}
+
+[for="cc"] {
+    order: 1;
+}
+
+#twint {
+    order: 2;
+}
+
+[for="twint"]{
+    order: 3;
+}
