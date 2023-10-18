@@ -1,10 +1,13 @@
+// 내가 쓴 코딩
+
+
 const myAge = parseInt(prompt("How old are you?"));
 const retireAge = parseInt(prompt("What is your retirement age? "));
 const workYears = retireAge - myAge;
 const thisYear = new Date().getFullYear();
 const retireYear = thisYear + workYears;
 
-function retirementCalculator(){
+function retirementCalculator(retireYear, workYears){
     if (workYears > 0){
         return `You will retire on ${retireYear}, and you will have to work ${workYears} years.`
     } else if (workYears === 0) {
@@ -13,7 +16,7 @@ function retirementCalculator(){
     return 'You have already retired.';
 }
 
-const result = retirementCalculator();
+const result = retirementCalculator(retireYear, workYears);
 console.log(result);
 
 // 
@@ -46,5 +49,3 @@ function biggerNum () {
 }
 
 biggerNum();
-
-devicePixelRatio

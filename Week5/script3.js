@@ -1,29 +1,31 @@
+// Kahirzat helped me write this
+
 let array = ["Banana", "Apples", "Oranges", "Blueberries"];
 console.log(array[2]);
 
-array.pop("Banana");
+array.shift();
 array.sort();
 array.push("Kiwi");
-array.pop("Apples");
-array.reversesort();
+array.shift();
+array.reverse();
 console.log(array);
 
-class GoodFood {
+class Food {
     constructor (r1,r2,r3){
         this.r1 = r1;
         this.r2 = r2;
         this.r3 = r3;
     }
-    myFavoriteCusine() {
-        let arrayOfFood = [this.r1,this.r2,this.r3];
-        for(let i = 0; i < arrayOfFood.length; i++) {
-            console.log(`My #${i+1} choice is ${arrayOfFood[i]}`);
+    myFav() {
+        let arrayFood = [this.r1,this.r2,this.r3];
+        for(let i = 0; i < arrayFood.length; i++) {
+            console.log(`My #${i+1} choice is ${arrayFood[i]}`);
         }
     }
 };
 
-let Ranking = new GoodFood("Korean food", "Japanese food", "Indian food");
-console.log(Ranking.myFavoriteCusine());
+let Ranking = new Food("Korean food", "Japanese food", "Indian food");
+console.log(Ranking.myFav());
 
 
 

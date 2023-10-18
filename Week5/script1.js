@@ -7,7 +7,7 @@ const food = {
     contains: ["nuts", "gluten"],
     vegetarian: true,
     halal: false,
-    expirary_date: "2023-10-18",
+    expiry_date: "2023-10-18",
     category: "fruit",
     price: 5.90, 
     edible: function(){
@@ -15,10 +15,10 @@ const food = {
         console.log(today.toISOString);
         console.log(today.toISOString().split('T'));
         console.log(today.toISOString().split('T')[0]);
-        if(today.toDateString().split('T')[0] < this.expirary_date){
+        if(today.toDateString().split('T')[0] < this.expiry_date){
 return true;
         }
-        return false;dd
+        return false;
     }
 }
 
@@ -26,20 +26,20 @@ return true;
 
 console.table(food);
 console.log(food.name);
-console.log(food["expirary_date"]);
+console.log(food["expiry_date"]);
 
 console.log(`Is my ${food.name} still edible?`);
 console.log(food.edible());
 
 
-function Food(calories, vitamins, name, contains, vegetarian = true, halal, expirary_date, category, price) {
+function Food(calories, vitamins, name, contains, vegetarian = true, halal, expiry_date, category, price) {
     this.name = name;
     this.calories = calories;
     this.vitamins = vitamins; 
     this.contains = contains;
     this.vegetarian = vegetarian;
     this.halal = halal;
-    this.expirary_date = expirary_date;
+    this.expiry_date = expiry_date;
     this.category = category;
     this.price = price; 
     this.edible = function(){
@@ -47,7 +47,7 @@ function Food(calories, vitamins, name, contains, vegetarian = true, halal, expi
         console.log(today.toISOString);
         console.log(today.toISOString().split('T'));
         console.log(today.toISOString().split('T')[0]);
-        if(today.toDateString().split('T')[0] < this.expirary_date){
+        if(today.toDateString().split('T')[0] < this.expiry_date){
 return true;
         }
         return false;
@@ -61,27 +61,27 @@ banana.mushy = true;
 banana = null;
 
 console.table(banana);
-banana.expirary_date = "2023-10-16";
+banana.expiry_date = "2023-10-16";
 console.log(banana.isEdible());
 
 //mushy = property, universal variables, 
 
 class Food {
-    constructor(calories, vitamins, name, contains, vegetarian = true, halal, expirary_date, category, price) {
+    constructor(calories, vitamins, name, contains, vegetarian = true, halal, expiry_date, category, price) {
         this.name = name;
         this.calories = calories;
         this.vitamins = vitamins; 
         this.contains = contains;
         this.vegetarian = vegetarian;
         this.halal = halal;
-        this.expirary_date = expirary_date;
+        this.expiry_date = expiry_date;
         this.category = category;
         this.price = price; 
     }
 
     isEdible(){
         let today = new Date();
-        if(today.toDateString().split('T')[0] < this.expirary_date){
+        if(today.toDateString().split('T')[0] < this.expiry_date){
             return true;
         }
         return false;
