@@ -29,3 +29,7 @@ function handleFormSubmission(event){
     console.table(event);
 }
 
+// 
+const toDo = document.getQuerySelector('input[type=text]');
+const btn = document.querySelector("button");
+const ul = document.querySelector("ul");
